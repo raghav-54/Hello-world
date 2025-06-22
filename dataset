@@ -1,0 +1,8 @@
+import pandas as pd
+import zipfile
+
+
+zf = zipfile.ZipFile("C:\Users\achyu\Downloads\creditcard.csv.zip")
+
+# Read the CSV file directly into a DataFrame
+df = pd.read_csv(zf.open('creditcard.csv'))
